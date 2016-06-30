@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCD-UR-NR8">
+                                <rect key="frame" x="20" y="28" width="560" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="underwater-images-23" translatesAutoresizingMaskIntoConstraints="NO" id="rRz-fL-esh">
+                                        <rect key="frame" x="-7" y="-8" width="584" height="142"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.79574366696323517" blue="0.5603792447608571" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Ga9-uz-COm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VA3-dL-pDk">
+                                <rect key="frame" x="20" y="452" width="128" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fishing-blue-fish-clipart" translatesAutoresizingMaskIntoConstraints="NO" id="JWe-NK-Oor">
+                                        <rect key="frame" x="0.0" y="21" width="129" height="86"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.68117829005015151" green="0.31070574227120074" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7xo-G9-q6U"/>
+                                    <constraint firstAttribute="width" constant="128" id="vWH-fK-MK6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbM-zv-oAb">
+                                <rect key="frame" x="452" y="452" width="128" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="redfish-md" translatesAutoresizingMaskIntoConstraints="NO" id="g72-Lp-pJU">
+                                        <rect key="frame" x="0.0" y="21" width="129" height="86"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.7600110641466653" green="1" blue="0.45781481788112965" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="CYN-E7-iDY"/>
+                                    <constraint firstAttribute="height" constant="128" id="qxp-E6-rEm"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Poy-Sb-hvE">
+                                <rect key="frame" x="229" y="285" width="149" height="29"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleColor" red="0.005846238954974328" green="0.007692307692307665" blue="0.0035216524452394466" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickblue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RKO-lP-nbs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4b-XD-cOV">
+                                <rect key="frame" x="277" y="360" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.020653044871794868" green="0.020653044871794868" blue="0.020653044871794868" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="RESET"/>
+                                <connections>
+                                    <action selector="setbothback:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Xn-9k-vco"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSM-K8-jsQ">
+                                <rect key="frame" x="267" y="322" width="66" height="30"/>
+                                <state key="normal" title="OPTIONS">
+                                    <color key="titleColor" red="0.005846238954974328" green="0.007692307692307665" blue="0.0035216524452394466" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickred:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gH5-R9-Do8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Poy-Sb-hvE" firstAttribute="centerX" secondItem="ZCD-UR-NR8" secondAttribute="centerX" id="0ut-Y4-a1Y"/>
+                            <constraint firstItem="B4b-XD-cOV" firstAttribute="top" secondItem="SSM-K8-jsQ" secondAttribute="bottom" constant="25" id="2fp-UD-T98"/>
+                            <constraint firstItem="ZCD-UR-NR8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="4Jk-uA-6cu"/>
+                            <constraint firstItem="ZCD-UR-NR8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8co-wd-eZs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qbM-zv-oAb" secondAttribute="bottom" constant="20" id="D4V-N6-nWt"/>
+                            <constraint firstItem="B4b-XD-cOV" firstAttribute="top" secondItem="SSM-K8-jsQ" secondAttribute="bottom" constant="8" id="DAR-S8-J2F"/>
+                            <constraint firstItem="SSM-K8-jsQ" firstAttribute="top" secondItem="Poy-Sb-hvE" secondAttribute="bottom" constant="8" id="DEV-Qr-5dk"/>
+                            <constraint firstItem="ZCD-UR-NR8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Eck-h3-rdq"/>
+                            <constraint firstItem="SSM-K8-jsQ" firstAttribute="width" secondItem="Poy-Sb-hvE" secondAttribute="width" id="Hwz-Zb-afT"/>
+                            <constraint firstItem="B4b-XD-cOV" firstAttribute="centerX" secondItem="SSM-K8-jsQ" secondAttribute="centerX" id="JgG-aB-UL1"/>
+                            <constraint firstItem="B4b-XD-cOV" firstAttribute="top" secondItem="SSM-K8-jsQ" secondAttribute="bottom" constant="25" id="MP2-A3-UsN"/>
+                            <constraint firstItem="VA3-dL-pDk" firstAttribute="leading" secondItem="ZCD-UR-NR8" secondAttribute="leading" id="Nep-pI-01J"/>
+                            <constraint firstItem="ZCD-UR-NR8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Rbg-PB-BND"/>
+                            <constraint firstItem="B4b-XD-cOV" firstAttribute="height" secondItem="SSM-K8-jsQ" secondAttribute="height" id="SsL-Ll-FMi"/>
+                            <constraint firstItem="SSM-K8-jsQ" firstAttribute="top" secondItem="Poy-Sb-hvE" secondAttribute="bottom" constant="8" id="bca-oI-NSA"/>
+                            <constraint firstItem="SSM-K8-jsQ" firstAttribute="height" secondItem="Poy-Sb-hvE" secondAttribute="height" id="cHv-5Z-nME"/>
+                            <constraint firstItem="Poy-Sb-hvE" firstAttribute="top" secondItem="ZCD-UR-NR8" secondAttribute="bottom" constant="129" id="dDi-Fn-k5k"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VA3-dL-pDk" secondAttribute="bottom" constant="20" id="eF2-Uf-IDm"/>
+                            <constraint firstItem="SSM-K8-jsQ" firstAttribute="top" secondItem="Poy-Sb-hvE" secondAttribute="bottom" constant="8" id="ejt-Lx-6Bw"/>
+                            <constraint firstItem="qbM-zv-oAb" firstAttribute="trailing" secondItem="ZCD-UR-NR8" secondAttribute="trailing" id="ng9-PO-Ijh"/>
+                            <constraint firstItem="B4b-XD-cOV" firstAttribute="width" secondItem="SSM-K8-jsQ" secondAttribute="width" id="qAm-be-d0A"/>
+                            <constraint firstItem="B4b-XD-cOV" firstAttribute="top" secondItem="SSM-K8-jsQ" secondAttribute="bottom" constant="53" id="qGU-Eh-dmS"/>
+                            <constraint firstItem="SSM-K8-jsQ" firstAttribute="top" secondItem="Poy-Sb-hvE" secondAttribute="bottom" constant="8" id="qGs-vB-J9T"/>
+                            <constraint firstItem="SSM-K8-jsQ" firstAttribute="centerX" secondItem="Poy-Sb-hvE" secondAttribute="centerX" id="rZU-ZO-akk"/>
+                            <constraint firstItem="ZCD-UR-NR8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="rzn-FS-Lvr"/>
+                            <constraint firstItem="Poy-Sb-hvE" firstAttribute="top" secondItem="ZCD-UR-NR8" secondAttribute="bottom" constant="129" id="ypK-Sv-ayO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bluefish" destination="JWe-NK-Oor" id="IXc-eT-NdW"/>
+                        <outlet property="redffish" destination="qbM-zv-oAb" id="AFo-17-Rep"/>
+                        <outlet property="redfish" destination="qbM-zv-oAb" id="WWc-jC-MKV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fishing-blue-fish-clipart" width="6805" height="4431"/>
+        <image name="redfish-md" width="297" height="228"/>
+        <image name="underwater-images-23" width="1920" height="1080"/>
+    </resources>
+</document>
